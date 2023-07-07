@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang = "ru">
+    <head>
+        <title>Стартовая страница</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+<form method="post" action = "/cgi-bin/API.py">
+Отпарвить секретное сообщение <br>
+  <label> Введите Ваш логин
+    <input type="text" name = "login_sender"required/>
+  </label>
+
+  <label> Введите Ваш пароль
+    <input type="password" name = "password_sender" required/>
+  </label> <br><br>
+
+  <label> Введите логин получателя
+    <input type="text" name = "login_recipient" required/>
+  </label> <br><br>
+
+  <label> Введите секретное сообщение
+    <input type="text" name = "secret" required/>
+  </label>
+
+  <button type="submit" name = "send" value="send"> Отправить </button> <br><br><br>
+</form> <br>
+
+<form method="post" action = "/cgi-bin/API.py">
+Открыть секретное сообщение <br>
+  <label> Ваш логин
+    <input type="text" name = "login" required/>
+  </label>
+
+  <label> Ваш пароль
+    <input type="password" name = "password" required/>
+  </label> <br><br>
+
+  <label> Ключ
+    <input type="text" name = "key" required/>
+  </label>
+
+  <button type="submit" name="open" value="open"> Открыть </button>
+</form> <br><br><br>
+
+<!-- <a href="Registration.html"> Зарегистрироваться </a> -->
+
+<form method="post" action = "/cgi-bin/API.py">
+Регистрация <br>
+  <label> Логин
+    <input type="text" name = "login_new" required/>
+  </label> <br><br>
+
+  <label> Пароль
+    <input type="password" name = "password1" required/>
+  </label> <br><br>
+
+  <label> Повторите пароль
+    <input type="password" name = "password2" required/>
+  </label> <br><br>
+
+  <button type="submit" name="registration" value="registration"> Зарегистрироваться </button>
+</form> <br>
+
+    </body>
+</html>
